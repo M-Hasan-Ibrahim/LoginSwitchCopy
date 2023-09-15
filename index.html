@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <%- include("./nav.ejs") %>
-
     <div class="container">
       <div class="switch-container" id="switch">
         <h1>Welcome!</h1>
@@ -21,14 +19,16 @@
           <p id="switchText">Want To SIGN IN?</p>
         </button>
       </div>
+
       <div class="sign-in-container" id="signIn">
         <h1>Sign In To Your Account</h1>
         <form>
-          <input type="text" placeholder="Username" />
-          <input type="password" placeholder="Password" />
+          <input type="text" placeholder="Username" required />
+          <input type="password" placeholder="Password" required />
           <button>SIGN IN</button>
         </form>
       </div>
+
       <div class="sign-up-container" id="signUp">
         <h1>Create Account</h1>
         <div class="sign-up-options">
@@ -48,6 +48,7 @@
             /></a>
           </span>
         </div>
+
         <button>SIGN UP</button>
       </div>
     </div>
