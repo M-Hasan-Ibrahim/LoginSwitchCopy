@@ -1,0 +1,43 @@
+:root {
+  --welcome-slide-bg: #ef4444;
+
+  /*switch container*/
+  --xTranslate: 0;
+  --switchBorder: 15px 0 0 15px;
+
+  /*signIn container*/
+  --signInXTranslate: 50;
+
+  /*signUp container*/
+  --signUpXTranslate: 100;
+
+  --translateTime: 1.5s;
+  --ZIndex: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background: #202020;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 60%;
+  height: 70%;
+  border-radius: 15px;
+}

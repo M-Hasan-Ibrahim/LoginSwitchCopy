@@ -1,0 +1,37 @@
+.switch-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  width: 50%;
+  height: 100%;
+  border-radius: 15px 0 0 15px;
+
+  color: #000;
+  padding: 2%;
+
+  background: var(--welcome-slide-bg);
+
+  z-index: 2;
+}
+
+#switch {
+  transform: translateX(calc(var(--xTranslate) * 1%));
+  border-radius: var(--switchBorder);
+
+  transition: all 1.5s ease-in-out;
+}
+
+.switch-container .switch-button {
+  margin-top: 5%;
+
+  width: 40%;
+  height: 12%;
+  background-color: var(--welcome-slide-bg);
+  border: 1px solid #ffffff;
+  border-radius: 25px;
+  color: #ffffff;
+
+  cursor: pointer;
+}

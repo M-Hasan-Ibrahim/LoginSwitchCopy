@@ -1,0 +1,113 @@
+.sign-up-container {
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  transform: translateX(100%);
+
+  width: 50%;
+  height: 100%;
+  border-radius: 0 15px 15px 0;
+
+  padding: 5%;
+
+  background: #ffffff;
+
+  z-index: 0;
+}
+
+#signUp {
+  transform: translateX(calc(var(--signUpXTranslate) * 1%));
+  z-index: var(--ZIndex);
+
+  transition: all var(--translateTime) ease-in-out;
+}
+
+.sign-up-container #signUpTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  transition: all 350ms ease-in-out;
+}
+
+.sign-up-container h1 {
+  font-size: 36px;
+
+  margin-bottom: 10%;
+}
+
+.sign-up-container .sign-up-options {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.sign-up-container .sign-up-options span a img {
+  width: 30px;
+  height: 30px;
+}
+
+.sign-up-container form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+
+  width: 80%;
+  height: 30%;
+
+  display: none;
+
+  transition: opacity 250ms ease-in;
+}
+
+.sign-up-container input {
+  margin-top: 1%;
+  margin-bottom: 5%;
+  width: 80%;
+  border: 0;
+  border-bottom: 1px solid #202020;
+  transition: all 250ms ease-in-out;
+}
+
+.sign-up-container input:hover {
+  font-size: 16px;
+  outline: none;
+}
+
+.sign-up-container input:is(:focus, :valid) {
+  font-size: 16px;
+  border-bottom: 2px solid #202020;
+  outline: none;
+}
+
+.sign-up-container button {
+  margin-top: 5%;
+
+  width: 40%;
+  height: 12%;
+  background-color: var(--welcome-slide-bg);
+  border: 0;
+  border-radius: 25px;
+  color: #ffffff;
+
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 350ms ease-in-out;
+}
+
+.sign-up-container span {
+  font: 30px;
+}

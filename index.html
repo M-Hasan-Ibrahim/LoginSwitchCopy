@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login/Signup page</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/switcher.css" />
+    <link rel="stylesheet" href="styles/signIn.css" />
+    <link rel="stylesheet" href="styles/signUp.css" />
   </head>
   <body>
     <div class="container">
@@ -30,29 +33,41 @@
       </div>
 
       <div class="sign-up-container" id="signUp">
-        <h1>Create Account</h1>
-        <div class="sign-up-options">
-          <span>
-            <a href="https://google.com" target="_blank"
-              ><img src="google.png"
-            /></a>
-          </span>
-          <span>
-            <a href="https://facebook.com" target="_blank"
-              ><img src="facebook.png"
-            /></a>
-          </span>
-          <span>
-            <a href="https://linkedin.com" target="_blank"
-              ><img src="linkedin.png"
-            /></a>
-          </span>
+        <div id="signUpTitle">
+          <h1>Create Account</h1>
+          <div class="sign-up-options">
+            <span>
+              <a href="https://google.com" target="_blank"
+                ><img src="signUpPNG/google.png"
+              /></a>
+            </span>
+            <span>
+              <a href="https://facebook.com" target="_blank"
+                ><img src="signUpPNG/facebook.png"
+              /></a>
+            </span>
+            <span>
+              <a href="https://linkedin.com" target="_blank"
+                ><img src="signUpPNG/linkedin.png"
+              /></a>
+            </span>
+          </div>
         </div>
-
-        <button>SIGN UP</button>
+        <form id="signUpForm" name="signUpForm">
+          <input type="text" placeholder="Username" name="username" />
+          <input type="email" placeholder="Email" name="email" />
+          <input type="password" placeholder="Password" name="password" />
+          <input
+            type="password"
+            placeholder="Confirm Password"
+            name="confirmedPassword"
+          />
+        </form>
+        <button id="signUpButton">SIGN UP <span>with email</span></button>
       </div>
     </div>
 
-    <script src="script.js" type="module"></script>
+    <script src="scripts/script.js" type="module"></script>
+    <script src="scripts/signUpScript.js" type="module"></script>
   </body>
 </html>
